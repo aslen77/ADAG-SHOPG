@@ -35,11 +35,13 @@ include("includes/main.php");
 <?php
 
 if(!isset($_SESSION['customer_email'])){
-
+  
 include("customer/customer_login.php");
 
 
-}else{
+}
+
+else{
 
 include("payment_options.php");
 

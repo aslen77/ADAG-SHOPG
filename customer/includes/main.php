@@ -73,17 +73,9 @@
         <nav class="main-nav">
           <ul class="categories">
 
-            <li class="categories__item">
-              <a class="categories__link" href="#">
-                Mens
-                <i class="icon-down-open-1"></i>
-              </a>
-              </li>
-
-            <li class="categories__item">
-              <a class="categories__link" href="#">
-                Womens
-            
+          <li class="categories__item">
+              <a class="categories__link categories__link--active" href="../../index.php">
+                Accueile  
               </a>
             </li>
 

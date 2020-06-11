@@ -47,11 +47,12 @@ if(!isset($_SESSION['customer_email'])){
 <li class="login__item">
 <?php
 if(!isset($_SESSION['customer_email'])){
+  
   echo '<a href="checkout.php" class="login__link">Sign In</a>';
 } 
   else
   { 
-      echo '<a href="../logout.php" class="login__link">Log out</a>';
+      echo '<a href="../logout.php" name ="logout" class="login__link">Log out</a>';
   }   
 ?>  
   
@@ -73,22 +74,15 @@ if(!isset($_SESSION['customer_email'])){
         <nav class="main-nav">
           <ul class="categories">
 
-            <li class="categories__item">
-              <a class="categories__link" href="#">
-                Mens
-               
-              </a>
-              </li>
-
-            <li class="categories__item">
-              <a class="categories__link" href="#">
-                Womens
-               
+          <li class="categories__item">
+              <a class="categories__link categories__link" href="../index.php">
+                Accueil
               </a>
             </li>
+      
 
             <li class="categories__item">
-              <a class="categories__link categories__link--active" href="shop.php">
+              <a class="categories__link categories__link" href="shop.php">
                 Shop
               </a>
             </li>
