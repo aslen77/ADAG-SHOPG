@@ -96,39 +96,8 @@ if(!isset($_SESSION['customer_email'])){
           <li class="categories__item">
               <a class="categories__link" href="customer/my_account.php?my_orders">
                 My Account
-                <i class="icon-down-open-1"></i>
               </a>
-              <div class="dropdown dropdown--lookbook">
-                <div class="clearfix">
-                  <div class="dropdown__half">
-                    <div class="dropdown__heading">Account Settings</div>
-                    <ul class="dropdown__items">
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">My Wishlist</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">My Orders</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">View Shopping Cart</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="dropdown__half">
-                    <div class="dropdown__heading"></div>
-                    <ul class="dropdown__items">
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Edit Your Account</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Change Password</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Delete Account</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              
              
 
               </div>
