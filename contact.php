@@ -48,8 +48,6 @@ $contact_email = $row_conatct_us['contact_email'];
 ?>
 
 
-</p>
-
 </center><!-- center Ends -->
 
 </div><!-- box-header Ends -->
@@ -89,34 +87,6 @@ $contact_email = $row_conatct_us['contact_email'];
 </div><!-- form-group Ends -->
 
 
-<div class="form-group"><!-- form-group Starts -->
-
-<label> Select Enquiry Type </label>
-
-
-<select name="enquiry_type" class="form-control"><!-- select Starts -->
-
-<option> Select Enquiry Type </option>
-
-<?php
-
-$get_enquiry_types = "select * from enquiry_types";
-
-$run_enquiry_types = mysqli_query($con,$get_enquiry_types);
-
-while($row_enquiry_types = mysqli_fetch_array($run_enquiry_types)){
-
-$enquiry_title = $row_enquiry_types['enquiry_title'];
-
-echo "<option> $enquiry_title </option>";
-
-}
-
-?>
-
-</select><!-- select Ends -->
-
-</div><!-- form-group Ends -->
 
 
 <div class="text-center"><!-- text-center Starts -->
@@ -135,26 +105,24 @@ echo "<option> $enquiry_title </option>";
 
 if(isset($_POST['submit'])){
 
-// Admin receives email through this code
-
-$sender_name = $_POST['name'];
-
-$sender_   = $_POST['email'];
-
-$sender_subject = $_POST['subject'];
-
-$sender_message = $_POST['message'];
-
-$req = "INSERT INTO contact_us(contact_id, namee, contact_email, contact_heading, contact_desc)
-VALUES (null  , '$sender_name' ,'$sender_' ,'$sender_subject','$sender_message')";
-
-
-$res = mysqli_query($con,$req);
-
-$count = mysqli_num_rows($res);
-
-
-
+  // Admin receives email through this code
+  
+  $sender_name = $_POST['name'];
+  
+  $sender_   = $_POST['email'];
+  
+  $sender_subject = $_POST['subject'];
+  
+  $sender_message = $_POST['message'];
+  
+  $req = "INSERT INTO contact_us(contact_id, namee, contact_email, contact_heading, contact_desc)
+  VALUES (null  , '$sender_name' ,'$sender_' ,'$sender_subject','$sender_message')";
+  
+  
+  $res = mysqli_query($con,$req);
+  
+  $count = mysqli_num_rows($res);
+  
 
 
 
