@@ -162,13 +162,7 @@ include("includes/main.php");
 
 <div class="form-group"><!-- form-group Starts -->
 
-<center>
 
-<label> Captcha Verification </label>
-
-<div class="g-recaptcha" data-sitekey="6Lc-WxYUAAAAAFUhTFfBEzLGmEgRXHHdsD4ECvIC"></div>
-
-</center>
 
 </div><!-- form-group Ends -->
 
@@ -329,17 +323,7 @@ if(val.length<=6)no=1;
 
 if(isset($_POST['register'])){
 
-$secret = "6Lc-WxYUAAAAAN5j2OdDsryWwGfREg5eeuZFpKMv";
 
-$response = $_POST['g-recaptcha-response'];
-
-$remoteip = $_SERVER['REMOTE_ADDR'];
-
-$url = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip");
-
-$result = json_decode($url, TRUE);
-
-if($result['success'] == 1){
 
 $c_name = $_POST['c_name'];
 
@@ -377,33 +361,9 @@ exit();
 
 }
 
-$customer_confirm_code = mt_rand();
 
-$subject = "Email Confirmation Message";
 
-$from = "sad.ahmed22224@gmail.com";
-
-$message = "
-
-<h2>
-Email Confirmation By Computerfever.com $c_name
-</h2>
-
-<a href='localhost/ecom_store/customer/my_account.php?$customer_confirm_code'>
-
-Click Here To Confirm Email
-
-</a>
-
-";
-
-$headers = "From: $from \r\n";
-
-$headers .= "Content-type: text/html\r\n";
-
-mail($c_email,$subject,$message,$headers);
-
-$insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip,customer_confirm_code) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip','$customer_confirm_code')";
+$insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip')";
 
 
 $run_customer = mysqli_query($con,$insert_customer);
@@ -437,11 +397,11 @@ echo "<script>window.open('index.php','_self')</script>";
 }
 else{
 
-echo "<script>alert('Please Select Captcha, Try Again')</script>";
+echo "<script>alert('erreur de connexion ')</script>";
 
 }
 
 
-}
+
 
 ?>

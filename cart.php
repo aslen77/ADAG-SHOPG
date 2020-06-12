@@ -279,6 +279,7 @@ $run_update = mysqli_query($con,$update_cart);
 
 echo "<script>alert('Your Coupon Code Has Been Applied')</script>";
 
+
 echo "<script>window.open('cart.php','_self')</script>";
 
 }
