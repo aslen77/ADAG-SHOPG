@@ -38,7 +38,7 @@ if(!isset($_SESSION['customer_email'])){
 } 
   else
   { 
-      echo '<a href="my_account.php?my_orders" class="login__link">My Account</a>';
+      echo '<a href="customer/my_account.php?my_orders" class="login__link">My Account</a>';
   }   
 ?>  
 </li>
@@ -52,7 +52,7 @@ if(!isset($_SESSION['customer_email'])){
 } 
   else
   { 
-      echo '<a href="../logout.php" name ="logout" class="login__link">Log out</a>';
+      echo '<a href="logout.php" name ="logout" class="login__link">Log out</a>';
   }   
 ?>  
   
@@ -88,9 +88,8 @@ if(!isset($_SESSION['customer_email'])){
             </li>
 
             <li class="categories__item">
-              <a class="categories__link" href="localstore.php">
-                Local Stores
-              </a>
+              <a class="categories__link" href="about.php">
+ABOUT US              </a>
             </li>
 
           <li class="categories__item">

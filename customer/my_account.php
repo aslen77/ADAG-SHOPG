@@ -20,7 +20,7 @@ include("includes/main.php");
     <!-- HERO -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">My </span>Account
+        <span class="nero__bold">My </span> Account
       </div>
       <p class="nero__text">
       </p>

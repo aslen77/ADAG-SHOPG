@@ -74,7 +74,7 @@
 				<div class="footer-nav__heading">Contact details</div>
 				<address class="address">
 				Head Office: Avenue Fashion.<br>
-				180-182 Regent Street, London.
+				Ivry-sur-Seine 94200, France
 			</address>
 				<div class="phone">
 					Telephone:
@@ -93,7 +93,7 @@
 		<div class="container clearfix">
 
 			<div class="banner-award">
-				<span>Award winner</span><br> Fashion awards 2016
+				<span>Award winner</span><br> Fashion awards 2020
 			</div>
 
 			<div class="banner-social">

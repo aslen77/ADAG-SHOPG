@@ -21,7 +21,7 @@
         </div>
 
         <div class="basket">
-          <a href="cart.php" class="btn btn--basket">
+          <a href="../cart.php" class="btn btn--basket">
             <i class="icon-basket"></i>
             <?php items(); ?> items
           </a>
@@ -37,7 +37,7 @@
           } 
             else
             { 
-                echo '<a href="my_account.php?my_orders" class="login__link">My Account</a>';
+                echo '<a href="my_account.php?my_orders" class="login__link">MyAccount</a>';
             }   
 ?>  
           </li>
@@ -50,7 +50,7 @@
           } 
             else
             { 
-                echo '<a href="../logout.php" class="login__link">Log out</a>';
+                echo '<a href="logout.php" class="login__link">Log out</a>';
             }   
 ?>  
             
@@ -74,13 +74,13 @@
           <ul class="categories">
 
           <li class="categories__item">
-              <a class="categories__link categories__link" href="index.php">
+              <a class="categories__link categories__link" href="../index.php">
                 Home
               </a>
             </li>
 
             <li class="categories__item">
-              <a class="categories__link categories__link" href="shop.php">
+              <a class="categories__link categories__link" href="../shop.php">
                 Shop
               </a>
             </li>

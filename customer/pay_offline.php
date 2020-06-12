@@ -23,7 +23,7 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <th> Bank Account Details </th>
 
-<th> Easy Paisa,UBL Omni,Mobi Cash Details: </th>
+<th> Eas,UCL ,Mobi Cash Details: </th>
 
 <th> Western Union Details: </th>
 
@@ -35,11 +35,11 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <tr>
 
-<td> Bank Name:ubl Account No:03333333 Branch Code:0342 Branch Name:Shadara Lahore	 </td>
+<td> Bank Name:LCL Account No:060444xxx Branch Code:75015 Branch Name:LCL Fr	 </td>
 
-<td> NIC#001234567 Mobile No:03334566931, Name:M.T.Ahmed </td>
+<td> NIC#001234567 Mobile No:0604xxxxx, Name:M.T.Aslen </td>
 
-<td> Full Name:M.T.Ahmed, Mobile No:03334566931, Name:M.T.Ahmed, Country:Pakistan, N.I.C No:001234567
+<td> Full Name:G.Aslen, Mobile No:0604xxxxx, Name:D.Alliou, Country:France, N.I.C No:001234567
 </td>
 
 
