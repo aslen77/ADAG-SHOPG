@@ -75,8 +75,8 @@ if(!isset($_SESSION['customer_email'])){
           <ul class="categories">
 
           <li class="categories__item">
-              <a class="categories__link categories__link" href="../index.php">
-                Accueil
+              <a class="categories__link categories__link" href="index.php">
+                Home
               </a>
             </li>
       

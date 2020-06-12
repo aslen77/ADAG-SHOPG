@@ -74,13 +74,13 @@
           <ul class="categories">
 
           <li class="categories__item">
-              <a class="categories__link categories__link--active" href="index.php">
-                Accueil
+              <a class="categories__link categories__link" href="index.php">
+                Home
               </a>
             </li>
 
             <li class="categories__item">
-              <a class="categories__link categories__link--active" href="shop.php">
+              <a class="categories__link categories__link" href="shop.php">
                 Shop
               </a>
             </li>
