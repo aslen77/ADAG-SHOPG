@@ -145,11 +145,11 @@
 			</div>
 
 			<div class="developer">
-				Dev by Loremipsum.com
+				Dev by Guesmi aslen et Diallo Aliou
 			</div>
 
 			<div class="designby">
-				Design by RobbyDesigns.com
+				Design by Guesmi aslen et Diallo Aliou
 			</div>
 		</div>
 	</div>
